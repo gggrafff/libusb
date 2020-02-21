@@ -1,0 +1,11 @@
+*.sln
+.vs/
+*.vcxproj*
+packages/
+Debug/
+Release/
+x64/
+Win32/
+ARM/
+ARM64/
+CMakeLists.txt.in
