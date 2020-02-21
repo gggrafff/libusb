@@ -59,7 +59,7 @@ static inline void usbi_mutex_destroy(usbi_mutex_t *mutex)
 }
 
 // We *were* getting timespec from pthread.h:
-#if !defined(HAVE_STRUCT_TIMESPEC) && !defined(_TIMESPEC_DEFINED)
+#if !defined(HAVE_STRUCT_TIMESPEC) && !defined(_TIMESPEC_DEFINED) && defined(_CRT_NO_TIME_T)
 #define HAVE_STRUCT_TIMESPEC 1
 #define _TIMESPEC_DEFINED 1
 struct timespec {
