@@ -1,6 +1,4 @@
-*.sln
 .vs/
-*.vcxproj*
 packages/
 Debug/
 Release/
