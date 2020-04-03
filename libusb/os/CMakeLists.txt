@@ -80,6 +80,8 @@ elseif (UNIX)
 			linux_usbfs.c
 			threads_posix.c
 			poll_posix.c
+			linux_netlink.c
+			linux_udev.c
 		)
 		set(THREADS_POSIX 1 CACHE INTERNAL "controls config.h macro definition" FORCE)
 		set(POLL_POSIX 1 CACHE INTERNAL "controls config.h macro definition" FORCE)
